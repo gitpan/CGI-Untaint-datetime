@@ -1,6 +1,6 @@
 --- #YAML:1.0
 name: CGI-Untaint-datetime
-version: 0.02
+version: 0.03
 author:
   - Marcus Ramberg <marcus@thefeed.no>
 abstract: validate a date
@@ -11,5 +11,5 @@ requires:
 provides:
   CGI::Untaint::datetime:
     file: lib/CGI/Untaint/datetime.pm
-    version: 0.02
+    version: 0.03
 generated_by: Module::Build version 0.25
