@@ -5,14 +5,14 @@ use base 'CGI::Untaint::printable';
 use Time::Piece;
 
 use vars qw/$VERSION/;
-$VERSION = '0.03';
+$VERSION = '0.05';
 
 sub is_valid {
     my $self=shift;
     my $date;
     my $val=$self->value;
     $val.=":00" if length($val) ==16; 
-    substr($val,10,1,"T");
+    substr($val,10,1,"T") if length($val) ==19;
     eval {
     $date=Time::Piece->strptime($val,"%FT%H:%M:%S")
 	or return;
