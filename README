@@ -12,6 +12,10 @@ DESCRIPTION
     specified by ISO 8601, that is, something resembling YYYY-MM-DDTHH:MM:SS
     it can even handle YYYY-MM-DD HH::MM::SS or YYYY-MM-D HH::MM
 
+METHODS
+    is_valid
+        The actual validation check. See CGI::Untaint for more information.
+
 SEE ALSO
     Time::Piece. CGI::Untaint
 

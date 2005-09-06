@@ -5,7 +5,7 @@ use base 'CGI::Untaint::printable';
 use Time::Piece;
 
 use vars qw/$VERSION/;
-$VERSION = '0.05';
+$VERSION = '0.06';
 
 sub is_valid {
     my $self=shift;
@@ -37,6 +37,16 @@ CGI::Untaint::datetime - validate a date
 This Input Handler verifies that the input is a valid datetime, as
 specified by ISO 8601, that is, something resembling YYYY-MM-DDTHH:MM:SS
 it can even handle YYYY-MM-DD HH::MM::SS or YYYY-MM-D HH::MM
+
+=head1 METHODS
+
+=over 4 
+
+=item is_valid
+
+The actual validation check. See CGI::Untaint for more information.
+
+=back
 
 =head1 SEE ALSO
 
